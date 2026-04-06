@@ -1,0 +1,33 @@
+{
+  "name": "gestion-de-stock-cloud-tp",
+  "version": "1.0.0",
+  "description": "TP microservices de gestion de stock avec Express, Nodemon et Bcrypt",
+  "private": true,
+  "scripts": {
+    "dev:auth": "nodemon services/auth-service/index.js",
+    "dev:products": "nodemon services/product-service/index.js",
+    "dev:orders": "nodemon services/order-service/index.js",
+    "dev:inventory": "nodemon services/inventory-service/index.js",
+    "start:auth": "node services/auth-service/index.js",
+    "start:products": "node services/product-service/index.js",
+    "start:orders": "node services/order-service/index.js",
+    "start:inventory": "node services/inventory-service/index.js"
+  },
+  "keywords": [
+    "microservices",
+    "express",
+    "nodemon",
+    "bcrypt"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "mongoose": "^8.19.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
